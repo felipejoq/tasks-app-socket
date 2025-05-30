@@ -1,7 +1,26 @@
-# App Todo List + Socket.io
+# App To-Do List + Socket.io
 
 ## Descripción
 Aplicación CRUD de tareas (ToDo List) con backend en Node.js, Express, TypeORM, PostgreSQL y comunicación en tiempo real usando Socket.IO.
+
+### Demo online
+
+La aplicaicón se puede probar de manera en línea en las siguientes URL:
+
+- Cliente: [Demo Cliente To-Do App](https://todo-client.uncodigo.com/)
+- Servidor: [Demo Servidor To-Do App](https://todo-server.uncodigo.com/)
+
+*Nota*: En el servidor se dispone una App SPA para probar el servidor, el código de la aplicación SPA se puede revisar en este repositorio: [Repositorio To-Do App Frontend](https://github.com/felipejoq/task-app-socket-front)
+
+### Decisiones técnicas
+
+- El backend está escrito en **TypeScript** para mejorar el tipado y la seguridad del código.
+- La estructura de carpetas sigue el principio de **Screaming Architecture**, separando el código por módulos de dominio.
+- Se implementan **servicios** para acceder a los repositorios, inspirados en la arquitectura de Nest.js, facilitando la escalabilidad y el testing.
+- Se utiliza **TypeORM** para simplificar el manejo de consultas y la gestión de la base de datos relacional.
+- La comunicación en tiempo real se implementa con **Socket.IO**, permitiendo notificaciones instantáneas de cambios en las tareas.
+- La base de datos **PostgreSQL** se levanta y persiste usando **Docker** y `docker-compose`, desacoplada del código fuente y permitiendo portabilidad, flexibilidad del proyecto.
+- El servidor sirve una **SPA** (Single Page Application) para pruebas rápidas y cuenta con una demo online.
 
 ---
 
@@ -113,7 +132,7 @@ npm run dev
 ## Notas adicionales
 - Los datos de la base de datos se guardan en la carpeta `postgres/` y están ignorados por git y TypeScript.
 - Puedes probar los endpoints con Postman o cualquier cliente HTTP.
-- Para probar el servidor y socket se ha añadido una App SPA en la raíz del servidor (En local sería http://localhost:3000/) en remoto usar [esta url]()
+- Para probar el servidor y socket se ha añadido una App SPA en la raíz del servidor (En local sería http://localhost:3000/) en remoto usar [https://todo-server.uncodigo.com](https://todo-server.uncodigo.com)
 
 ---
 
