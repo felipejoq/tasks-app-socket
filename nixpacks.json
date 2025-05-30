@@ -1,0 +1,7 @@
+{
+  "phases": {
+    "setup": {
+      "nodejs": "20.x"
+    }
+  }
+}
