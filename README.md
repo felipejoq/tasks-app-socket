@@ -63,6 +63,11 @@ La aplicaicón se puede probar de manera en línea en las siguientes URL:
 
 ## Despliegue local
 
+### Prerequisitos:
+- [Node.js 20](https://nodejs.org/) o superior
+- [Docker](https://www.docker.com/get-started/) y [Docker Compose](https://docs.docker.com/compose/)
+- [Git](https://git-scm.com/)
+
 ### 1. Clona el repositorio
 ```sh
 git clone https://github.com/felipejoq/tasks-app-socket.git
