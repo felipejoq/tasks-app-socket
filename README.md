@@ -85,12 +85,12 @@ PUBLIC_PATH=public
 
 # Database configuration
 TYPE_DB=postgres
-POSTGRES_HOST=localhost
-POSTGRES_PORT=5433
-POSTGRES_USER=postgres
-POSTGRES_PASSWORD=
-POSTGRES_DB=tasksapp
-SYNCHRONIZE_DB=true # Ponga en false si no desea sincronizar la base de datos
+PGHOST=localhost
+PGPORT=5433
+PGUSER=postgres
+PGPASSWORD= # Contraseña del usuario postgres es requerida
+PGDATABASE=tasksapp
+SYNCHRONIZE_DB=true # Poner en false si no hay que sincronizar la base de datos
 LOGGING_DB=false
 # POSTGRES_URL=
 ```
