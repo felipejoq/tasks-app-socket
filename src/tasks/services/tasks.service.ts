@@ -1,10 +1,10 @@
 import { Repository } from "typeorm";
-import { Task } from "../models/task.model";
+import { Task } from "@src/tasks/models/task.model";
 import { AppDataSource } from "@src/database/app.datasource";
-import { TaskShowDto } from "../dtos/task.show.dto";
+import { TaskShowDto } from "@src/tasks/dtos/task.show.dto";
 import { CustomError } from "@src/config/errors/custom.error";
 import { SocketService } from "@src/socket/socket.service";
-import { TaskEvent } from "../types/task.event.types";
+import { TaskEvent } from "@src/tasks/types/task.event.types";
 
 export class TasksService {
 

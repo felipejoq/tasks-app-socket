@@ -1,9 +1,9 @@
 import { Request, Response } from 'express';
-import { TasksService } from '../services/tasks.service';
-import { handleError } from '@src/config/errors/handle.error';
-import { TaskSaveDto } from '../dtos/task.save.dto';
 import { validate } from 'class-validator';
-import { TaskUpdateDto } from '../dtos/task.update.dto';
+import { handleError } from '@src/config/errors/handle.error';
+import { TasksService } from '@src/tasks/services/tasks.service';
+import { TaskSaveDto } from '@src/tasks/dtos/task.save.dto';
+import { TaskUpdateDto } from '@src/tasks/dtos/task.update.dto';
 
 export class TasksController {
 

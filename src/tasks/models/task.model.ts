@@ -1,5 +1,5 @@
 import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
-import { TaskStatus } from "../types/task.status.types";
+import { TaskStatus } from "@src/tasks/types/task.status.types";
 
 @Entity({
     name: 'tasks'

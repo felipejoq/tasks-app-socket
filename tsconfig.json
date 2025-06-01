@@ -10,7 +10,8 @@
       "@middlewares/*": ["src/middlewares/*"],
       "@config/*": ["src/config/*"],
       "@users/*": ["src/users/*"],
-      "@profits/*": ["src/profits/*"]
+      "@profits/*": ["src/profits/*"],
+      "@socket/*": ["src/socket/*"],
     },
     "outDir": "dist/",
     "esModuleInterop": true,

@@ -1,5 +1,5 @@
 import { IsEnum, IsNotEmpty } from "class-validator";
-import { TaskStatus } from "../types/task.status.types";
+import { TaskStatus } from "@src/tasks/types/task.status.types";
 
 export class TaskUpdateDto {
     constructor(partial: Partial<TaskUpdateDto>) {

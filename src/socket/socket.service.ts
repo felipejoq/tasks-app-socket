@@ -1,5 +1,5 @@
 import { TaskEvent } from '@src/tasks/types/task.event.types';
-import { SocketServer } from './Socket.Server';
+import { SocketServer } from '@src/socket/Socket.Server';
 
 export class SocketService {
 

@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { TasksController } from "../controllers/tasks.controller";
-import { TasksService } from "../services/tasks.service";
+import { TasksController } from "@src/tasks/controllers/tasks.controller";
+import { TasksService } from "@src/tasks/services/tasks.service";
 
 export class TasksRoutes {
 

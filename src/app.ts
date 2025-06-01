@@ -2,8 +2,8 @@ import express from "express";
 import { Server } from "@src/Server";
 import { envsPlugin } from "@config/plugins/envs.plugin";
 import { AppRoutes } from "@routes/v1/app.routes";
+import { SocketServer } from "@src/socket/Socket.Server";
 import "reflect-metadata";
-import { SocketServer } from "./socket/Socket.Server";
 
 (async () => {
     main();

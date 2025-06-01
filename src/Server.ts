@@ -1,10 +1,8 @@
-import http from 'http';
+import http from 'node:http';
+import path from 'node:path';
 import express, { Response, Request, Router, Application as ExpressApp } from 'express';
-import path from 'path';
 import { AppDataSource } from "@src/database/app.datasource";
-import { CorsMiddleware } from "@middlewares/cors.middleware";
-// import { Server as SocketIOServer } from 'socket.io';
-
+import { CorsMiddleware } from "@src/middlewares/cors.middleware";
 
 interface Options {
   app: ExpressApp;
@@ -12,8 +10,6 @@ interface Options {
   routes: Router;
   public_path?: string;
   accepted_origins?: string[];
-  // serverListener?: http.Server;
-  // io?: SocketIOServer;
 }
 
 export class Server {
@@ -24,7 +20,6 @@ export class Server {
   private readonly acceptedOrigins: string[];
   private readonly routes: Router;
   private serverListener: http.Server | undefined;
-  // private io?: SocketIOServer;
 
   constructor(options: Options) {
     const {app,  port, routes, accepted_origins = [], public_path = 'public' } = options;
@@ -70,35 +65,14 @@ export class Server {
       console.error(error);
     });
 
-    // const httpServer = http.createServer(this.app);
-    // this.io = new SocketIOServer(httpServer, {
-    //   cors: {
-    //     origin: this.acceptedOrigins,
-    //     methods: ["GET", "POST"]
-    //   }
-    // });
-
-    // this.io.on('connection', (socket) => {
-    //   console.log('Client connected:', socket.id);
-    //   // You can add more event listeners here
-    // });
-
     this.serverListener = this.app.listen(this.port, () => {
       console.log(`Server running on port ${this.port}`);
     });
 
   }
 
-  // async stop() {
-  //   this.serverListener?.close();
-  // }
-
   public getListener(): http.Server | undefined {
     return this.serverListener
   }
-
-  // public getIo(): SocketIOServer | undefined {
-  //   return this.io;
-  // }
 
 }
