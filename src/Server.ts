@@ -50,14 +50,6 @@ export class Server {
       res.sendFile(indexPath);
     });
 
-    if (this.app._router && this.app._router.stack) {
-      this.app._router.stack.forEach((layer: any) => {
-        if (layer.route && layer.route.path) {
-          console.log(layer.route.path);
-        }
-      });
-    }
-
     //* Database
     AppDataSource.initialize().then(() => {
       console.log('Database connected');
