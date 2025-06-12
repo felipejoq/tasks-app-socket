@@ -7,8 +7,8 @@ Aplicación CRUD de tareas (ToDo List) con backend en Node.js, Express, TypeORM,
 
 Puede probar la aplicación en línea en las siguientes URL:
 
-- Cliente: [Demo Cliente To-Do App](https://todo-client.uncodigo.com/)
-- Servidor: [Demo Servidor To-Do App](https://todo-server.uncodigo.com/)
+- Cliente: **Proyecto archivado no disponible en línea**
+- Servidor: **Proyecto archivado no disponible en línea**
 
 *Nota*: En el servidor se dispone de una App SPA para probar el servidor. El código de la aplicación SPA puede revisarse en este repositorio: [Repositorio To-Do App Frontend](https://github.com/felipejoq/task-app-socket-front)
 
